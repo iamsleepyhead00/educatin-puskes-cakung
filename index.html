@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Catin — Kuisioner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=55">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- SPLASH SCREEN -->
+    <div id="splash" class="splash active">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@2/dist/lottie-player.js"></script>
+        <!-- Decorative leaves -->
+        <div class="splash-leaf splash-leaf-tl"></div>
+        <div class="splash-leaf splash-leaf-tr"></div>
+        <div class="splash-leaf splash-leaf-bl"></div>
+        <div class="splash-leaf splash-leaf-br"></div>
+        <!-- Bokeh circles -->
+        <div class="splash-bokeh splash-bokeh-1"></div>
+        <div class="splash-bokeh splash-bokeh-2"></div>
+        <div class="splash-bokeh splash-bokeh-3"></div>
+        <!-- Glow spots -->
+        <div class="splash-glow splash-glow-1"></div>
+        <div class="splash-glow splash-glow-2"></div>
+
+        <div class="splash-content">
+            <div class="splash-logo-wrap">
+                <div class="splash-lottie">
+                    <lottie-player
+                        src="Cincin-01.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 180px; height: 180px;"
+                        loop
+                        autoplay>
+                    </lottie-player>
+                </div>
+            </div>
+            <h1 class="splash-title">POLI CATIN</h1>
+            <div class="splash-divider-wrap">
+                <span class="splash-divider-line"></span>
+                <i data-lucide="heart" class="splash-divider-icon"></i>
+                <span class="splash-divider-line"></span>
+            </div>
+            <p class="splash-subtitle">Selamat Datang di Web Edukasi Catin</p>
+            <div class="splash-loader">
+                <div class="splash-loader-bar"></div>
+            </div>
+            <p class="splash-loading-text">MEMUAT...</p>
+        </div>
+    </div>
+
+    <!-- PAGE: BIODATA -->
+    <div id="page-biodata" class="page active">
+        <div class="layout-wrapper">
+            <!-- HEADER BAR -->
+            <header class="app-header">
+                <div class="app-header-left">
+                    <i data-lucide="shield-check" style="color:#0d7a4a; width:22px; height:22px;"></i>
+                    <div class="header-brand">
+                        <strong>POLI CATIN</strong>
+                        <span>Edukasi • Persiapan • Keluarga</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- MAIN CONTENT (no sidebar) -->
+            <div class="layout-body layout-body-single">
+                <main class="content-area content-area-full">
+                    <div class="content-header">
+                        <div class="content-title-icon-circle">
+                            <i data-lucide="clipboard-list" style="color:#0d7a4a; width:22px; height:22px;"></i>
+                        </div>
+                        <div>
+                            <h1 class="content-title">Data Diri Pasien</h1>
+                            <p class="content-subtitle">Silakan lengkapi data diri Anda sebelum memulai edukasi.</p>
+                        </div>
+                    </div>
+                    <form id="biodata-form">
+                        <div class="form-field">
+                            <label class="form-label" for="nik">NIK (Nomor Induk Kependudukan)</label>
+                            <div class="input-with-icon">
+                                <i data-lucide="id-card" class="input-icon"></i>
+                                <input type="text" id="nik" name="nik" inputmode="numeric" pattern="\d{16}" maxlength="16" placeholder="16 digit NIK sesuai KTP" required>
+                            </div>
+                            <small class="field-hint">NIK terdiri dari 16 digit angka</small>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label" for="nama">Nama Lengkap (Sesuai KTP)</label>
+                            <div class="input-with-icon">
+                                <i data-lucide="user" class="input-icon"></i>
+                                <input type="text" id="nama" name="nama" placeholder="Nama lengkap sesuai KTP" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label" for="wa">No. WhatsApp Aktif</label>
+                            <div class="input-with-icon">
+                                <i data-lucide="phone" class="input-icon"></i>
+                                <input type="tel" id="wa" name="wa" inputmode="numeric" pattern="0\d{8,14}" placeholder="Contoh: 081234567890" required>
+                            </div>
+                            <small class="field-hint">Dimulai dengan angka 0, tanpa spasi atau tanda baca</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-biodata-submit">
+                            <i data-lucide="log-in" style="width:18px; height:18px;"></i>
+                            Lanjut ke Pre-Test
+                        </button>
+                    </form>
+                    <p class="content-privacy" style="display:none;">
+                        <i data-lucide="lock" style="width:12px; height:12px; vertical-align: middle; margin-right: 4px; color:#888;"></i>
+                        Dengan melanjutkan, Anda menyetujui <strong>kebijakan privasi</strong> kami.
+                    </p>
+                    <p class="content-copyright" style="display:none;">© 2024 Poli Catin. All rights reserved.</p>
+                </main>
+            </div>
+            <!-- Footer outside content card -->
+            <div class="biodata-footer" style="display:none;">
+                <p class="biodata-footer-privacy">
+                    <i data-lucide="lock" style="width:12px; height:12px; vertical-align: middle; margin-right: 4px; color:#888;"></i>
+                    Dengan melanjutkan, Anda menyetujui <strong>kebijakan privasi</strong> kami.
+                </p>
+                <p class="biodata-footer-copyright">© 2024 Poli Catin. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE: PRE-TEST -->
+    <div id="page-pretest" class="page">
+        <div class="layout-wrapper">
+            <!-- HEADER BAR -->
+            <header class="app-header">
+                <div class="app-header-left">
+                    <i data-lucide="shield-check" class="header-logo-icon" style="color:#0d7a4a; width:24px; height:24px;"></i>
+                    <div class="header-brand">
+                        <strong>POLI CATIN</strong>
+                        <span>Edukasi • Persiapan • Keluarga</span>
+                    </div>
+                </div>
+                <div class="app-header-right">
+                    <div class="header-counter">
+                        <span class="counter-label">Pertanyaan</span>
+                        <span class="counter-value" id="q-counter">0 <small>dari 0</small></span>
+                    </div>
+                    <div class="header-progress" id="q-progress-ring">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                            <circle cx="20" cy="20" r="16" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+                            <circle cx="20" cy="20" r="16" fill="none" stroke="#0d7a4a" stroke-width="3" stroke-linecap="round"
+                                stroke-dasharray="100.53" stroke-dashoffset="100.53" id="progress-circle"
+                                transform="rotate(-90 20 20)"/>
+                        </svg>
+                        <span class="progress-pct" id="q-progress-pct">0%</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- MAIN CONTENT (no sidebar) -->
+            <div class="layout-body layout-body-single">
+                <!-- CONTENT -->
+                <main class="content-area content-area-full">
+                    <div class="content-header">
+                        <div class="content-title-icon-circle">
+                            <i data-lucide="clipboard-list" style="color:#0d7a4a; width:22px; height:22px;"></i>
+                        </div>
+                        <div>
+                            <h1 class="content-title">Kuisioner Pre-Test</h1>
+                            <p class="content-subtitle">Jawab pertanyaan berikut sesuai pemahaman Anda saat ini.</p>
+                        </div>
+                    </div>
+                    <form id="pretest-form" class="quiz-form"></form>
+                    <!-- FOOTER NAV -->
+                    <div class="content-footer">
+                        <button type="button" class="btn btn-outline" id="btn-prev-pretest" hidden>← Sebelumnya</button>
+                        <div class="footer-spacer"></div>
+                        <button type="submit" form="pretest-form" class="btn btn-primary btn-submit-pretest"><i data-lucide="send" style="width:18px; height:18px;"></i> Kirim Jawaban</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE: HASIL PRE-TEST -->
+    <div id="page-pretest-result" class="page">
+        <div class="layout-wrapper">
+            <header class="app-header">
+                <div class="app-header-left">
+                    <i data-lucide="shield-check" style="color:#0d7a4a; width:22px; height:22px;"></i>
+                    <div class="header-brand">
+                        <strong>POLI CATIN</strong>
+                        <span>Edukasi • Persiapan • Keluarga</span>
+                    </div>
+                </div>
+            </header>
+            <div class="layout-body layout-body-single">
+                <main class="content-area content-area-full">
+                    <div class="content-header">
+                        <div class="content-title-icon-circle"><i data-lucide="bar-chart-2" style="width:22px; height:22px; color:#0d7a4a;"></i></div>
+                        <div>
+                            <h1 class="content-title">Hasil Pre-Test</h1>
+                            <p class="content-subtitle">Berikut adalah skor awal Anda.</p>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div id="pretest-result-summary"></div>
+                        <button id="btn-start-sections" class="btn btn-primary"><i data-lucide="play" style="width:18px; height:18px;"></i> Mulai Edukasi Video</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- DYNAMIC SECTION PAGES (Video → Post-Test → Result per section) -->
+    <!-- These are generated dynamically by app.js -->
+    <div id="section-pages"></div>
+
+    <!-- PAGE: HASIL AKHIR -->
+    <div id="page-final" class="page">
+        <div class="layout-wrapper">
+            <header class="app-header">
+                <div class="app-header-left">
+                    <i data-lucide="shield-check" style="color:#0d7a4a; width:22px; height:22px;"></i>
+                    <div class="header-brand">
+                        <strong>POLI CATIN</strong>
+                        <span>Edukasi • Persiapan • Keluarga</span>
+                    </div>
+                </div>
+            </header>
+            <div class="layout-body layout-body-single">
+                <main class="content-area content-area-full">
+                    <div class="content-header">
+                        <div class="content-title-icon-circle"><i data-lucide="trophy" style="width:22px; height:22px; color:#0d7a4a;"></i></div>
+                        <div>
+                            <h1 class="content-title">Hasil Akhir</h1>
+                            <p class="content-subtitle">Berikut adalah hasil evaluasi lengkap Anda.</p>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div id="final-result-summary"></div>
+                        <button id="btn-restart" class="btn btn-secondary" hidden><i data-lucide="refresh-cw" style="width:18px; height:18px;"></i> Tonton Ulang Video</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONFIRM MODAL -->
+    <div id="confirm-modal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" id="btn-modal-close">
+                <i data-lucide="x" style="width:20px; height:20px; color:#666;"></i>
+            </button>
+            <div class="modal-icon-wrap">
+                <div class="modal-icon-circle">
+                    <i data-lucide="clipboard-check" style="width:36px; height:36px; color:#0d7a4a;"></i>
+                </div>
+                <!-- Sparkles -->
+                <span class="modal-sparkle s1">✦</span>
+                <span class="modal-sparkle s2">✦</span>
+                <span class="modal-sparkle s3">+</span>
+                <span class="modal-sparkle s4">+</span>
+                <span class="modal-sparkle s5">✦</span>
+            </div>
+            <h2 class="modal-title">Konfirmasi Jawaban</h2>
+            <div class="modal-divider"></div>
+            <p class="modal-text">Pastikan seluruh jawaban Anda sudah benar sebelum melanjutkan ke hasil evaluasi.</p>
+            <div class="modal-actions">
+                <button id="btn-modal-cancel" class="btn btn-modal-outline">
+                    <i data-lucide="undo-2" style="width:16px; height:16px;"></i>
+                    Periksa Kembali
+                </button>
+                <button id="btn-modal-confirm" class="btn btn-modal-primary">
+                    <i data-lucide="check-circle-2" style="width:16px; height:16px;"></i>
+                    Ya, Lanjutkan
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NIK DUPLICATE MODAL -->
+    <div id="nik-modal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-icon-wrap">
+                <div class="modal-icon-circle" style="background:#fef2f2; border-color:#fecaca;">
+                    <i data-lucide="alert-triangle" style="width:36px; height:36px; color:#dc2626;"></i>
+                </div>
+            </div>
+            <h2 class="modal-title" style="color: #dc2626;">NIK Sudah Terdaftar</h2>
+            <div class="modal-divider" style="background:#dc2626;"></div>
+            <p class="modal-text">
+                NIK ini sudah pernah digunakan untuk mengisi kuisioner sebelumnya. Setiap pasien hanya dapat mengisi satu kali.
+            </p>
+            <div class="modal-actions">
+                <button id="btn-nik-ok" class="btn btn-modal-primary">Mengerti</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BIODATA CONFIRM MODAL -->
+    <div id="biodata-confirm-modal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" id="btn-biodata-modal-close">
+                <i data-lucide="x" style="width:20px; height:20px; color:#666;"></i>
+            </button>
+            <div class="modal-icon-wrap">
+                <div class="modal-icon-circle">
+                    <i data-lucide="user-check" style="width:36px; height:36px; color:#0d7a4a;"></i>
+                </div>
+            </div>
+            <h2 class="modal-title">Konfirmasi Data</h2>
+            <div class="modal-divider"></div>
+            <p class="modal-text">Pastikan data yang Anda isi sudah benar sebelum melanjutkan ke Pre-Test.</p>
+            <div id="biodata-confirm-summary" style="text-align:left; background:#f8faf5; border-radius:10px; padding:0.75rem 1rem; margin-bottom:1.25rem; font-size:0.85rem;"></div>
+            <div class="modal-actions">
+                <button id="btn-biodata-cancel" class="btn btn-modal-outline">
+                    <i data-lucide="pencil" style="width:16px; height:16px;"></i>
+                    Ubah Data
+                </button>
+                <button id="btn-biodata-confirm" class="btn btn-modal-primary">
+                    <i data-lucide="check-circle-2" style="width:16px; height:16px;"></i>
+                    Ya, Lanjutkan
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js?v=14"></script>
+    <script src="app.js?v=50"></script>
+</body>
+</html>
