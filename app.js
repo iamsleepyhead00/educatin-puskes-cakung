@@ -613,6 +613,16 @@ document.addEventListener('DOMContentLoaded', () => {
             progressFill.style.width = '0%';
             progressText.textContent = '0% ditonton';
             formEl.reset();
+            // Reset post-test progress counter
+            const counterEl = document.getElementById(`q-counter-${sid}`);
+            const pctEl = document.getElementById(`q-progress-pct-${sid}`);
+            const circleEl = document.getElementById(`progress-circle-${sid}`);
+            if (counterEl) counterEl.innerHTML = `0 <small>dari ${section.questions.length}</small>`;
+            if (pctEl) pctEl.textContent = '0%';
+            if (circleEl) {
+                const circumference = 2 * Math.PI * 16;
+                circleEl.setAttribute('stroke-dashoffset', circumference);
+            }
             showPage(`page-video-${sid}`);
         });
 
@@ -678,7 +688,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const bio = state.biodata || {};
                 const targetNumber = cfg.TARGET_PHONE || '6289522091583';
                 const text =
-                    `*Hasil Kuisioner Video Edukasi Catin*\n\n` +
+                    `*Hasil Edukasi Poli Catin*\n\n` +
                     `👤 *Pasien*\n` +
                     `Nama: ${bio.nama || '-'}\n` +
                     `NIK: ${bio.nik || '-'}\n` +

@@ -12,5 +12,5 @@ window.APP_CONFIG = {
     SHEETS_ENDPOINT: 'https://script.google.com/macros/s/AKfycbzIacQAh5apLgFnMU0VYD5XAnn7T0dxWHPJ68CTaMUZxxbbPEosbp58QNzWartrAuhd/exec',
 
     // Scoring
-    KKM: 100
+    KKM: 75
 };
