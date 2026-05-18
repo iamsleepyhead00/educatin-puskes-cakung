@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <header class="app-header">
                         <div class="app-header-left">
                             <i data-lucide="shield-check" style="color:#0d7a4a; width:22px; height:22px;"></i>
-                            <div class="header-brand"><strong>POLI CATIN</strong><span>Edukasi • Persiapan • Keluarga</span></div>
+                            <div class="header-brand"><strong>POLI CATIN</strong><span>Edukasi • Puskesmas Cakung</span></div>
                         </div>
                     </header>
                     <div class="layout-body layout-body-single">
@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <header class="app-header">
                         <div class="app-header-left">
                             <i data-lucide="shield-check" style="color:#0d7a4a; width:22px; height:22px;"></i>
-                            <div class="header-brand"><strong>POLI CATIN</strong><span>Edukasi • Persiapan • Keluarga</span></div>
+                            <div class="header-brand"><strong>POLI CATIN</strong><span>Edukasi • Puskesmas Cakung</span></div>
                         </div>
                         <div class="app-header-right">
                             <div class="header-counter">
@@ -450,7 +450,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <header class="app-header">
                         <div class="app-header-left">
                             <i data-lucide="shield-check" style="color:#0d7a4a; width:22px; height:22px;"></i>
-                            <div class="header-brand"><strong>POLI CATIN</strong><span>Edukasi • Persiapan • Keluarga</span></div>
+                            <div class="header-brand"><strong>POLI CATIN</strong><span>Edukasi • Puskesmas Cakung</span></div>
                         </div>
                     </header>
                     <div class="layout-body layout-body-single">
