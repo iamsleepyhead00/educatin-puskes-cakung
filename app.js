@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'anemia',
             title: 'ANEMIA',
             shortTitle: 'ANEMIA',
-            video: 'https://drive.google.com/uc?export=download&id=1jPgTi2D4ZqnENZo1Z6FarDgTv2yXE8nd',
+            video: 'https://raw.githubusercontent.com/IAMWFS30/educatin-puskes-cakung/main/video-anemia.mp4',
             questions: [
                 {
                     q: 'Apa yang dimaksud Anemia?',
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'ims',
             title: 'Infeksi Menular Seksual (IMS)',
             shortTitle: 'IMS',
-            video: 'https://drive.google.com/uc?export=download&id=1qUmUXkpMBpj7HVYNIQ6CicGK2Bxs4Jsp',
+            video: 'https://raw.githubusercontent.com/IAMWFS30/educatin-puskes-cakung/main/video-ims.mp4',
             questions: [
                 {
                     q: 'Apa kepanjangan dari IMS?',
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'pranikah',
             title: 'Persiapan Pranikah',
             shortTitle: 'Pranikah',
-            video: 'https://drive.google.com/uc?export=download&id=1mZ6GwPcGslD1FxAQ88RT5FITsFqJ919y',
+            video: 'https://raw.githubusercontent.com/IAMWFS30/educatin-puskes-cakung/main/video-pranikah.mp4',
             questions: [
                 {
                     q: 'Isi Piringku adalah pedoman?',
